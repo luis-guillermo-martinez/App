@@ -7,6 +7,9 @@ import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { AptitudesComponent } from './componentes/aptitudes/aptitudes.component';
 import { LogrosComponent } from './componentes/logros/logros.component';
+import { PortfolioService } from './servicios/portfolio.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { LogrosComponent } from './componentes/logros/logros.component';
     LogrosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
